@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/send',['as'=>'send','uses'=>'ContactFormController@store']);
+
+Route::get('/booking',function(){
+	return view('booking');
+});
