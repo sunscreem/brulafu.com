@@ -51,6 +51,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 
+    {!! ReCaptcha::htmlScriptTagJsApi() !!}
+
 </head>
 <body id="page-top">
     <a href="#page-top" class="scroll-up scroll"><i class="fa fa-chevron-up"></i></a>
@@ -256,7 +258,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-
+                                        {!! htmlFormSnippet() !!}
                                     </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-primary">Send message</button>
